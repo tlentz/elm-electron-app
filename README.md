@@ -36,16 +36,13 @@ The aim of this project is to provide Web Developers using `elm` the power to cr
 
 ## 🚀 Getting Started
 
-**Note:** If you wish to use npm over yarn then modify package.json by replacing `yarn` with `npm` in `electron-dev` and `preelectron-pack` scripts.
-But I strongly recommend using <em>yarn</em> as it is a better choice when compared to <em>npm</em>.
-
 ### 🤓 Use this boilerplate
 
 ```bash
 # Clone the Project
 
 # Install create-elm-app as global dependency.
-$ yarn global add create-elm-app
+$ npm global add create-elm-app
 # npm -g i create-elm-app
 
 # Use degit scaffolding tool
@@ -59,13 +56,13 @@ $ git clone https://github.com/soulehshaikh99/create-elm-electron-app.git
 $ cd create-elm-electron-app
 
 # Install dependencies
-$ yarn # or npm install
+$ npm # or npm install
 
 # Run your app
-$ yarn electron-dev # or npm run electron-dev
+$ npm electron-dev # or npm run electron-dev
 
 # Package Your App
-$ yarn electron-pack # or npm run electron-pack
+$ npm electron-pack # or npm run electron-pack
 ```
 
 ### 💫 Create this boilerplate from scratch (Manual Setup)
@@ -73,7 +70,7 @@ $ yarn electron-pack # or npm run electron-pack
 #### 1) Create an Elm project using scaffolding tool create-elm-app.
 
 ```bash
-$ yarn create elm-app create-elm-electron-app
+$ npm create elm-app create-elm-electron-app
 # npx create-elm-app create-elm-electron-app
 ```
 
@@ -87,20 +84,20 @@ $ cd create-elm-electron-app
 
 ```bash
 # set entry point to main.js
-$ yarn init # or npm init
+$ npm init # or npm init
 ```
 
 #### 4) Install Development Dependencies
 
 ```bash
-$ yarn add --dev electron electron-builder wait-on concurrently
+$ npm add --dev electron electron-builder wait-on concurrently
 # npm i -D electron electron-builder wait-on concurrently
 ```
 
 #### 5) Install Production Dependency
 
 ```bash
-$ yarn add electron-serve # or npm i electron-serve
+$ npm add electron-serve # or npm i electron-serve
 ```
 
 #### 6) Your dependencies should look something like this
@@ -247,8 +244,8 @@ app.on("activate", function () {
   "test": "elm-app test",
   "eject": "elm-app eject",
   "electron": "wait-on http://localhost:3000 && electron .",
-  "electron-dev": "concurrently \"yarn start\" \"yarn electron\"",
-  "preelectron-pack": "yarn build",
+  "electron-dev": "concurrently \"npm start\" \"npm electron\"",
+  "preelectron-pack": "npm build",
   "electron-pack": "electron-builder"
 }
 ```
@@ -276,10 +273,10 @@ app.on("activate", function () {
 
 ```bash
 # Run your app
-$ yarn electron-dev # or npm run electron-dev
+$ npm electron-dev # or npm run electron-dev
 
 # Package Your App
-$ yarn electron-pack # or npm run electron-pack
+$ npm electron-pack # or npm run electron-pack
 ```
 
 ### 💯 Result

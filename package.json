@@ -30,8 +30,8 @@
     "test": "elm-app test",
     "eject": "elm-app eject",
     "electron": "wait-on http://localhost:3000 && electron .",
-    "electron-dev": "concurrently \"yarn start\" \"yarn electron\"",
-    "preelectron-pack": "yarn build",
+    "electron-dev": "concurrently \"npm start\" \"npm electron\"",
+    "preelectron-pack": "npm build",
     "electron-pack": "electron-builder"
   },
   "dependencies": {
